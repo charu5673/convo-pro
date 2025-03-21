@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/layout_bg"
+        android:orientation="vertical"
+        android:weightSum="4350"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="291"/>
+
+        <LinearLayout
+            android:id="@+id/convoL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="464"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13" />
+
+            <TextView
+                android:id="@+id/convo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="74"
+                android:fontFamily="@font/louisgeorgecafe"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:text="CONVO"
+                android:textColor="#000000"
+                android:textSize="75dp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="13" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/proL"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="322"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="67" />
+
+            <TextView
+                android:id="@+id/pro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="24"
+                android:fontFamily="@font/louisgeorgecafelightitalic"
+                android:text="PRO"
+                android:textColor="#000000"
+                android:textSize="40sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="150"/>
+
+
+
+        <ScrollView
+            android:id="@+id/s1"
+            android:layout_width="316dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3053"
+            android:background="#F2F8EE"
+            android:contentDescription="Categories of Units"
+            android:scrollbarSize="0dp">
+
+            <LinearLayout
+                android:id="@+id/ls1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="14">
+
+                <Button
+                    android:id="@+id/length"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Length"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Weight"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Area"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/volume"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Volume"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/time"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Time"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/temperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Temperature"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/speed"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Speed"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/energy"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Energy"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/power"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Power"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/pressure"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Pressure"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Frequency"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/angles"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Angles"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/density"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Density"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+                <Button
+                    android:id="@+id/data"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#C0DEB0"
+                    android:fontFamily="@font/louisgeorgecafe"
+                    android:insetLeft="10dp"
+                    android:insetTop="15dp"
+                    android:insetRight="10dp"
+                    android:insetBottom="15dp"
+                    android:text="Data"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="30sp"
+                    app:cornerRadius="18dp" />
+
+            </LinearLayout>
+        </ScrollView>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="96"/>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
