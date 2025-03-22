@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -40,7 +41,7 @@ public class ConvertArea extends AppCompatActivity implements View.OnClickListen
         adapter = ArrayAdapter.createFromResource(
                 this,
                 getId((getIntent().getStringExtra("category").toLowerCase())+"_units"),
-                android.R.layout.simple_spinner_item
+                R.layout.spinner_item
         );
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         from.setAdapter(adapter);
@@ -76,9 +77,18 @@ public class ConvertArea extends AppCompatActivity implements View.OnClickListen
             public void handleOnBackPressed() {
                 Intent i=new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);
-                setContentView(R.layout.activity_main);
             }
         });
+    }
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        float f = getResources().getDisplayMetrics().density;
+        EditText inp=findViewById(R.id.input_field);
+        TextView out=findViewById(R.id.output_field);
+        float h=inp.getTextSize();
+        h=h/f;
+        out.setTextSize(h);
     }
 
 

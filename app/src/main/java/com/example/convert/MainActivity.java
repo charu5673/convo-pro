@@ -55,8 +55,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         float f = getResources().getDisplayMetrics().density;
         float h=convoL.getHeight();
         h=h/f;
-        convo.setTextSize(h);
-        pro.setTextSize(h/2);
+        convo.setTextSize((int)(h*0.8));
+        pro.setTextSize((int)(h/2.5));
     }
 
     @Override
@@ -68,7 +68,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent i=new Intent(getApplicationContext(),ConvertArea.class);
             i.putExtra("category",text);
             startActivity(i);
-            setContentView(R.layout.area_convert);
         }
     }
     void assignbId(Button btn, int id) {
